@@ -1,7 +1,5 @@
 package com.devsuperior.dsmovie.entities;
 
-import java.io.Serializable;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -10,9 +8,7 @@ import javax.persistence.Table;
 
 @Entity
 @Table(name = "tb_user")
-public class User implements Serializable{
-	private static final long serialVersionUID = 1L;
-	
+public class User {	
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
